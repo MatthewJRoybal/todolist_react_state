@@ -1,14 +1,16 @@
 import React from 'react';
 
-const Form = ({ handleChange, handleSubmit, item }) => (
+const Form = ({ handleChange, handleSubmit, value }) => (
   <form>
     <input
       name="item"
       type="text"
-      value={item}
+      value={value}
       onChange={handleChange}
       placeholder="Enter an item"
     />
-    <button type="submit" onClick={event => handleSubmit(event)}>Submit</button>
+  <button type="submit" className="submit" onClick={event => handleSubmit(event)}>Submit</button>
   </form>
 )
+
+export default Form;

@@ -1,15 +1,15 @@
 import React from 'react';
 import './styles.css';
 
-import From from './form';
-import Item from './item';
+import Form from './form';
+import Items from './items';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       value: '',
-      items: [ "Toilet Paper" ]
+      items: [ "Eggs", "Milk", "Toilet Paper" ]
     }
   }
 
@@ -30,19 +30,25 @@ class App extends React.Component {
     })
   }
 
-  handleDelete = () => {
-    console.log("delete");
+  handleDelete = item => {
+    this.setState(state => {
+      // Remove the unwanted item by element name
+      const items = state.items.filter(value => item !== value);
+      return {
+        value: '', // reset
+        items // replace
+      }
+    })
   }
 
   render() {
     return (
-      <React.Fragment>
-        <h1>A to do list using React state management</h1>
+      <div className="app">
+        <h1>State Management Using React Components</h1>
+        <h2>A friendly to do list example</h2>
         <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} value={this.state.value} />
-        <ul>
-          <Item items={this.state.items} />
-        </ul>
-      </React.Fragment>
+        <Items handleDelete={this.handleDelete} items={this.state.items} />
+      </div>
     )
   }
 }
