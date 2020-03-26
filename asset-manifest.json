@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MatthewJRoybal/ToDoList_React_State/static/css/main.6149965d.chunk.css",
+    "main.js": "/MatthewJRoybal/ToDoList_React_State/static/js/main.4e242d1b.chunk.js",
+    "main.js.map": "/MatthewJRoybal/ToDoList_React_State/static/js/main.4e242d1b.chunk.js.map",
+    "runtime-main.js": "/MatthewJRoybal/ToDoList_React_State/static/js/runtime-main.fb85a005.js",
+    "runtime-main.js.map": "/MatthewJRoybal/ToDoList_React_State/static/js/runtime-main.fb85a005.js.map",
+    "static/js/2.20597958.chunk.js": "/MatthewJRoybal/ToDoList_React_State/static/js/2.20597958.chunk.js",
+    "static/js/2.20597958.chunk.js.map": "/MatthewJRoybal/ToDoList_React_State/static/js/2.20597958.chunk.js.map",
+    "index.html": "/MatthewJRoybal/ToDoList_React_State/index.html",
+    "precache-manifest.990b9c22cf012b5afabe7ca8288e6a6c.js": "/MatthewJRoybal/ToDoList_React_State/precache-manifest.990b9c22cf012b5afabe7ca8288e6a6c.js",
+    "service-worker.js": "/MatthewJRoybal/ToDoList_React_State/service-worker.js",
+    "static/css/main.6149965d.chunk.css.map": "/MatthewJRoybal/ToDoList_React_State/static/css/main.6149965d.chunk.css.map",
+    "static/js/2.20597958.chunk.js.LICENSE.txt": "/MatthewJRoybal/ToDoList_React_State/static/js/2.20597958.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb85a005.js",
+    "static/js/2.20597958.chunk.js",
+    "static/css/main.6149965d.chunk.css",
+    "static/js/main.4e242d1b.chunk.js"
+  ]
+}
