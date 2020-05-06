@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Form = ({ handleChange, handleSubmit, value }) => (
-  <form>
+  <form onSubmit={(event) => handleSubmit(event, value)}>
     <input
       name="item"
       type="text"
@@ -9,7 +9,7 @@ const Form = ({ handleChange, handleSubmit, value }) => (
       onChange={handleChange}
       placeholder="Enter an item"
     />
-  <button type="submit" className="submit" onClick={event => handleSubmit(event)}>Submit</button>
+  <button type="submit" className="submit">Submit</button>
   </form>
 )
 

@@ -1,56 +1,50 @@
-import React from 'react';
-import './styles.css';
+import React from "react"
+import "./styles.css"
 
-import Form from './form';
-import Items from './items';
+import Form from "./form"
+import List from "./list"
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props)
     this.state = {
-      value: '',
-      items: [ "Eggs", "Milk", "Toilet Paper" ]
+      value: "",
+      list: ["Eggs", "Milk", "Toilet Paper"],
     }
   }
 
-  handleChange = event => {
-    // Update value during onChange
-    this.setState({ value: event.target.value })
-  }
-
-  handleSubmit = event => {
-    event.preventDefault();
-    this.setState(state => {
-      // Add array value without mutating state
-      const items = [...state.items, state.value];
-      return {
-        value: '', // reset
-        items // replace
-      }
+  handleChange = event => this.setState({ value: event.target.value })
+  handleDelete = value =>
+    this.setState({
+      list: this.state.list.filter(item => value !== item),
     })
-  }
-
-  handleDelete = item => {
+  handleSubmit = event => {
+    event.preventDefault()
     this.setState(state => {
-      // Remove the unwanted item by element name
-      const items = state.items.filter(value => item !== value);
       return {
-        value: '', // reset
-        items // replace
+        value: "",
+        list: [...state.list, state.value],
       }
     })
   }
 
   render() {
+    const { list, value } = this.state
+    console.log(list)
+
     return (
-      <div className="app">
-        <h1>State Management Using React Components</h1>
+      <div data-testid="app" className="app">
+        <h1>State Management Using React Hooks</h1>
         <h2>A friendly to do list example</h2>
-        <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} value={this.state.value} />
-        <Items handleDelete={this.handleDelete} items={this.state.items} />
+        <Form
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+          value={value}
+        />
+        <List handleDelete={this.handleDelete} list={list} />
       </div>
     )
   }
 }
 
-export default App;
+export default App
