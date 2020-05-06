@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.6149965d.chunk.css",
-    "main.js": "./static/js/main.8b1e492b.chunk.js",
-    "main.js.map": "./static/js/main.8b1e492b.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.ea9252b1.js",
-    "runtime-main.js.map": "./static/js/runtime-main.ea9252b1.js.map",
-    "static/js/2.20597958.chunk.js": "./static/js/2.20597958.chunk.js",
-    "static/js/2.20597958.chunk.js.map": "./static/js/2.20597958.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.dddcfbfe280e2f6816b6ada2a2d6e873.js": "./precache-manifest.dddcfbfe280e2f6816b6ada2a2d6e873.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.6149965d.chunk.css.map": "./static/css/main.6149965d.chunk.css.map",
-    "static/js/2.20597958.chunk.js.LICENSE.txt": "./static/js/2.20597958.chunk.js.LICENSE.txt"
+    "main.css": "/MatthewJRoybal/todolist_react_state/static/css/main.6149965d.chunk.css",
+    "main.js": "/MatthewJRoybal/todolist_react_state/static/js/main.80a419ab.chunk.js",
+    "main.js.map": "/MatthewJRoybal/todolist_react_state/static/js/main.80a419ab.chunk.js.map",
+    "runtime-main.js": "/MatthewJRoybal/todolist_react_state/static/js/runtime-main.ce90668a.js",
+    "runtime-main.js.map": "/MatthewJRoybal/todolist_react_state/static/js/runtime-main.ce90668a.js.map",
+    "static/js/2.20597958.chunk.js": "/MatthewJRoybal/todolist_react_state/static/js/2.20597958.chunk.js",
+    "static/js/2.20597958.chunk.js.map": "/MatthewJRoybal/todolist_react_state/static/js/2.20597958.chunk.js.map",
+    "index.html": "/MatthewJRoybal/todolist_react_state/index.html",
+    "precache-manifest.80cac4e98e877d1937f0a059d9084e9e.js": "/MatthewJRoybal/todolist_react_state/precache-manifest.80cac4e98e877d1937f0a059d9084e9e.js",
+    "service-worker.js": "/MatthewJRoybal/todolist_react_state/service-worker.js",
+    "static/css/main.6149965d.chunk.css.map": "/MatthewJRoybal/todolist_react_state/static/css/main.6149965d.chunk.css.map",
+    "static/js/2.20597958.chunk.js.LICENSE.txt": "/MatthewJRoybal/todolist_react_state/static/js/2.20597958.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ea9252b1.js",
+    "static/js/runtime-main.ce90668a.js",
     "static/js/2.20597958.chunk.js",
     "static/css/main.6149965d.chunk.css",
-    "static/js/main.8b1e492b.chunk.js"
+    "static/js/main.80a419ab.chunk.js"
   ]
 }
